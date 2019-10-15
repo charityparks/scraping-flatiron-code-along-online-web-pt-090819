@@ -6,10 +6,13 @@ class Course
     
   
   def initialize
-    @title = title
+    @@all << self
   end
   
-  def title
-    @title
+  def self.all
+    @@all
   end
+  
+  def self.reset_all
+    
 end
